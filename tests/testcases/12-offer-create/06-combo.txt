@@ -7,4 +7,4 @@ Taker Pays; 8@8 12123
 Issuer;   ruazs5h1qEs     qpke88pcqna     seXdm6od2xc   
 Taker Gets; >.< 234567
 Issuer;   ruazs5h1qEs     qpke88pcqna     seXdm6od2xc   
-Fee; XRP 0.00001
+Fee; XAH 0.00001
