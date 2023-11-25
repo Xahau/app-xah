@@ -24,20 +24,29 @@ The XAH wallet app comes with the following features:
   - CheckCancel
   - CheckCash
   - CheckCreate
+  - ClaimReward
   - DepositPreauth
   - EscrowCancel
   - EscrowCreate
   - EscrowFinish
+  - Invoke
+  - Import
   - OfferCancel
   - OfferCreate
   - Payment
   - PaymentChannelClaim
   - PaymentChannelCreate
   - PaymentChannelFund
+  - SetHook
   - SetRegularKey
   - SignerListSet
   - TrustSet
-- Support for all transaction common fields such as memos
+  - URITokenBurn
+  - URITokenBuy
+  - URITokenCreateSellOffer
+  - URITokenCancelSellOffer
+  - URITokenMint
+- Support for all transaction common fields such as memos, hook parameters, network id
 - Support for issued assets such as SOLO, stocks and ETFs
 - Support for signing on behalf of others
 - Support for multi-signing
