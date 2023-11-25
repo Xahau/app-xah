@@ -379,56 +379,56 @@ const char *resolve_field_name(field_t *field) {
         switch (field->id) {
             // inner object
             // OBJECT/1 is reserved for end of object
-            case 2:
-                return "Transaction Meta Data";
-            case 3:
-                return "Created Node";
-            case 4:
-                return "Deleted Node";
-            case 5:
-                return "Modified Node";
-            case 6:
-                return "Previous Fields";
-            case 7:
-                return "Final Fields";
-            case 8:
-                return "New Fields";
-            case 9:
-                return "Template Entry";
+            // case 2:
+            //     return "Transaction Meta Data";
+            // case 3:
+            //     return "Created Node";
+            // case 4:
+            //     return "Deleted Node";
+            // case 5:
+            //     return "Modified Node";
+            // case 6:
+            //     return "Previous Fields";
+            // case 7:
+            //     return "Final Fields";
+            // case 8:
+            //     return "New Fields";
+            // case 9:
+            //     return "Template Entry";
             case 10:
                 return "Memo";
             case 11:
                 return "Signer Entry";
             case 12:
                 return "NFToken";
-            case 13:
-                return "EmitDetails";
+            // case 13:
+            //     return "EmitDetails";
             case 14:
                 return "Hook";
             case 16:
                 return "Signer";
-            case 18:
-                return "Majority";
-            case 19:
-                return "Disabled Validator";
-            case 20:
-                return "Emitted Txn";
-            case 21:
-                return "Hook Execution";
-            case 22:
-                return "Hook Definition";
+            // case 18:
+            //     return "Majority";
+            // case 19:
+            //     return "Disabled Validator";
+            // case 20:
+            //     return "Emitted Txn";
+            // case 21:
+            //     return "Hook Execution";
+            // case 22:
+            //     return "Hook Definition";
             case 23:
                 return "Hook Parameter";
             case 24:
                 return "Hook Grant";
-            case 93:
-                return "Hook Emission";
-            case 94:
-                return "Import VLKey";
-            case 95:
-                return "Active Validator";
-            case 96:
-                return "Genesis Mint";
+            // case 93:
+            //     return "Hook Emission";
+            // case 94:
+            //     return "Import VLKey";
+            // case 95:
+            //     return "Active Validator";
+            // case 96:
+            //     return "Genesis Mint";
         }
     }
 
@@ -440,56 +440,46 @@ const char *resolve_field_name(field_t *field) {
                 return "Signers";
             case 4:
                 return "Signer Entries";
-            case 5:
-                return "Template";
-            case 6:
-                return "Necessary";
-            case 7:
-                return "Sufficient";
-            case 8:
-                return "AffectedNodes";
+            // case 5:
+            //     return "Template";
+            // case 6:
+            //     return "Necessary";
+            // case 7:
+            //     return "Sufficient";
+            // case 8:
+            //     return "AffectedNodes";
             case 9:
                 return "Memos";
             case 10:
                 return "NFTokens";
             case 11:
                 return "Hooks";
-            case 16:
-                return "Majorities";
-            case 17:
-                return "Disabled Validators";
-            case 18:
-                return "Hook Executions";
+            // case 16:
+            //     return "Majorities";
+            // case 17:
+            //     return "Disabled Validators";
+            // case 18:
+            //     return "Hook Executions";
             case 19:
                 return "Hook Parameters";
             case 20:
                 return "Hook Grants";
-            case 93:
-                return "Hook Emissions";
-            case 94:
-                return "Import VLKeys";
-            case 95:
-                return "Active Validators";
-            case 96:
-                return "Genesis Mints";
+            // case 93:
+            //     return "Hook Emissions";
+            // case 94:
+            //     return "Import VLKeys";
+            // case 95:
+            //     return "Active Validators";
+            // case 96:
+            //     return "Genesis Mints";
         }
     }
 
     if (field->data_type == STI_UINT8) {
         switch (field->id) {
             // 8-bit integers
-            case 1:
-                return "Close Resolution";
-            case 2:
-                return "Method";
-            case 3:
-                return "Transaction Result";
             case 16:
                 return "Tick Size";
-            case 17:
-                return "UNLModify isabling";
-            case 18:
-                return "Hook Result";
         }
     }
 
