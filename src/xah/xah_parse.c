@@ -420,15 +420,6 @@ err_t post_process_field(parseContext_t *context, field_t *field) {
                 context->transaction_type = field->data.u16;
             }
             break;
-        case STI_UINT32:
-            // Reject transaction if tfFullyCanonicalSig is not set
-            if (field->id == XAH_UINT32_FLAGS) {
-                uint32_t value = field->data.u32;
-                if ((value & TF_FULLY_CANONICAL_SIG) == 0) {
-                    err.err = 0x6800;
-                    return err;
-                }
-            }
 
             break;
         case STI_VL:
