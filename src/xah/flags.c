@@ -246,12 +246,19 @@ static void format_payment_channel_claim_flags(uint32_t value, field_value_t *ds
 
 static void format_set_hook_flags(uint32_t value, field_value_t *dst) {
 // SetHook flags
-#define TF_RENEW 0x00010000u
-#define TF_CLOSE 0x00020000u
+#define HSF_OVERRIDE 0x00000001u
+#define HSF_NSDELETE 0x0000002u
+#define HSF_COLLECT 0x00000004u
 
     size_t offset = 0;
-    if (HAS_FLAG(value, TF_RENEW)) {
-        offset = append_item(dst, offset, "Renew");
+    if (HAS_FLAG(value, HSF_OVERRIDE)) {
+        offset = append_item(dst, offset, "Override");
+    }
+    if (HAS_FLAG(value, HSF_NSDELETE)) {
+        offset = append_item(dst, offset, "NS Delete");
+    }
+    if (HAS_FLAG(value, HSF_COLLECT)) {
+        offset = append_item(dst, offset, "Collect");
     }
 }
 
@@ -271,7 +278,7 @@ static void format_claim_reward_flags(uint32_t value, field_value_t *dst) {
 
     size_t offset = 0;
     if (HAS_FLAG(value, TF_OPT_IN)) {
-        offset = append_item(dst, offset, "Opt In");
+        offset = append_item(dst, offset, "Opt Out");
     }
 }
 
