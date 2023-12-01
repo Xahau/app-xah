@@ -1,6 +1,7 @@
-Transaction Type; Create Escrow
+Transaction Type; EscrowCreate
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
-Cancel After; 2016-11-22 23:32:38 UTC
-Amount; XAH 0.01
-Fee; XAH 0.00002
+Amount; XAH 0
+Cancel After; 533172758
+Fee; XAH 0.000020
+NetworkID; 21337
 Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   

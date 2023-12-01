@@ -1,6 +1,6 @@
-Transaction Type; Set Trust Line
+Transaction Type; TrustSet
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
-Flags; Clear Freeze
-Limit Amount; [!] 999999999999999900000000000000000000000000000000000000000000000000000000000000000000000000000000
-Issuer;   rsP3mgGb2tcY    UrxiLFiHJiQ     XhsziegtwBc   
-Fee; XAH 0.00001
+Fee; XAH 0.000010
+NetworkID; 21337
+Flags; 2097152
+Limit Amount; [object Object]

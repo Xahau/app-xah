@@ -1,4 +1,4 @@
-Transaction Type; Set Regular Key
+Transaction Type; SetRegularKey
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Fee; XAH 0.000018
-Regular Key; [empty]
+NetworkID; 21337

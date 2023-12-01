@@ -1,4 +1,5 @@
-Transaction Type; Account Setting
+Transaction Type; AccountSet
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
-Clear Flag; Track Txn ID
-Fee; XAH 0.00001
+Fee; XAH 0.000010
+NetworkID; 21337
+Clear Flag; 5

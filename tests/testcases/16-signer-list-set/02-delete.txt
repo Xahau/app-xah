@@ -1,4 +1,4 @@
-Transaction Type; Set Signer List
+Transaction Type; SignerListSet
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
-Signer Quorum; 0
-Fee; XAH 0.00001
+Fee; XAH 0.000010
+NetworkID; 21337
