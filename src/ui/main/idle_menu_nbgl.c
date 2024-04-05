@@ -1,5 +1,5 @@
 /*******************************************************************************
- *   XRP Wallet
+ *   XAH Wallet
  *   (c) 2022 Ledger
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
@@ -50,6 +50,6 @@ static void on_quit_clbk(void) {
 }
 
 void display_idle_menu() {
-    nbgl_useCaseHome(APPNAME, &C_icon_XRP_64px, NULL, true, display_about_menu, on_quit_clbk);
+    nbgl_useCaseHome(APPNAME, &C_icon_XAH_64px, NULL, true, display_about_menu, on_quit_clbk);
 }
 #endif  // HAVE_NBGL
