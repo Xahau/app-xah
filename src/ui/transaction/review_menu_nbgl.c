@@ -52,7 +52,7 @@ static void reviewStart(void) {
 
     infoLongPress.text = "Confirm Transaction";
     infoLongPress.longPressText = "Hold to confirm";
-    infoLongPress.icon = &C_icon_XRP_64px;
+    infoLongPress.icon = &C_icon_XAH_64px;
 
     pairList.pairs = NULL;
     pairList.nbPairs = transaction->num_fields;
@@ -60,7 +60,7 @@ static void reviewStart(void) {
     pairList.callback = getPair;
     pairList.startIndex = 0;
 
-    nbgl_useCaseReviewStart(&C_icon_XRP_64px,
+    nbgl_useCaseReviewStart(&C_icon_XAH_64px,
                             "Review transaction",
                             NULL,
                             "Reject",
