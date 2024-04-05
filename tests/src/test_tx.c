@@ -7,9 +7,9 @@
 #include <cmocka.h>
 
 #include "cx.h"
-#include "../src/xrp/xrp_parse.h"
-#include "../src/xrp/xrp_helpers.h"
-#include "../src/xrp/fmt.h"
+#include "../src/xah/xah_parse.h"
+#include "../src/xah/xah_helpers.h"
+#include "../src/xah/fmt.h"
 
 parseContext_t parse_context;
 
@@ -49,7 +49,7 @@ static const char *testcases[] = {
     "../testcases/06-account-set/02-default-ripple.raw",
     "../testcases/06-account-set/03-deposit-auth.raw",
     "../testcases/06-account-set/04-disable-master.raw",
-    "../testcases/06-account-set/05-disallow-xrp.raw",
+    "../testcases/06-account-set/05-disallow-xah.raw",
     "../testcases/06-account-set/06-global-freeze.raw",
     "../testcases/06-account-set/07-no-freeze.raw",
     "../testcases/06-account-set/08-require-auth.raw",
@@ -90,6 +90,28 @@ static const char *testcases[] = {
     "../testcases/18-arrays/01-basic.raw",
     "../testcases/18-arrays/02-multiple.raw",
     "../testcases/18-arrays/03-not-last.raw",
+    "../testcases/19-claim-reward/01-basic.raw",
+    "../testcases/19-claim-reward/02-optout.raw",
+    "../testcases/20-import/01-basic.raw",
+    "../testcases/20-import/02-issuer.raw",
+    "../testcases/21-invoke/01-basic.raw",
+    "../testcases/21-invoke/02-issuer.raw",
+    "../testcases/21-invoke/03-params.raw",
+    "../testcases/22-set-hook/01-noop.raw",
+    "../testcases/22-set-hook/02-create.raw",
+    "../testcases/22-set-hook/03-create-params.raw",
+    "../testcases/22-set-hook/04-create-grants.raw",
+    "../testcases/22-set-hook/05-install.raw",
+    "../testcases/22-set-hook/06-update.raw",
+    "../testcases/22-set-hook/07-delete.raw",
+    "../testcases/22-set-hook/08-delete-ns.raw",
+    "../testcases/23-uritoken-burn/01-basic.raw",
+    "../testcases/24-uritoken-buy/01-basic.raw",
+    "../testcases/25-uritoken-cancel-sell-offer/01-basic.raw",
+    "../testcases/26-uritoken-create-sell-offer/01-basic.raw",
+    "../testcases/27-uritoken-mint/01-basic.raw",
+    "../testcases/27-uritoken-mint/02-transfer.raw",
+    "../testcases/27-uritoken-mint/03-burnable.raw",
     NULL,
 };
 

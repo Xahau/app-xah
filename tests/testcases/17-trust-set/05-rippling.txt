@@ -1,6 +1,6 @@
-Transaction Type; Set Trust Line
+Transaction Type; TrustSet
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
-Flags; Clear No Ripple
-Limit Amount; OK? 0.0000123
-Issuer;   rsP3mgGb2tcY    UrxiLFiHJiQ     XhsziegtwBc   
-Fee; XRP 0.00001
+Fee; XAH 0.000010
+NetworkID; 21337
+Flags; 262144
+Limit Amount; [object Object]
