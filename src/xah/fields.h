@@ -286,32 +286,7 @@ typedef enum {
 #define XAH_STARRAY_IMPORT_VL_KEYS      0x5E
 #define XAH_STARRAY_HOOK_EMISSIONS      0x5D
 
-// #define XAH_UINT16_TRANSACTION_TYPE     0x02
-// #define XAH_UINT32_FLAGS                0x02
-// #define XAH_UINT32_SEQUENCE             0x04
-// #define XAH_UINT32_EXPIRATION           0x0A
-// #define XAH_UINT32_TRANSFER_RATE        0x0B
-// #define XAH_UINT32_QUALITY_IN           0x14
-// #define XAH_UINT32_QUALITY_OUT          0x15
-// #define XAH_UINT32_LAST_LEDGER_SEQUENCE 0x1B
-// #define XAH_UINT32_SET_FLAG             0x21
-// #define XAH_UINT32_CLEAR_FLAG           0x22
-// #define XAH_UINT32_CANCEL_AFTER         0x24
-// #define XAH_UINT32_FINISH_AFTER         0x25
-// #define XAH_UINT32_SETTLE_DELAY         0x27
-// #define XAH_VL_SIGNING_PUB_KEY          0x03
-// #define XAH_VL_DOMAIN                   0x07
-// #define XAH_VL_MEMO_TYPE                0x0C
-// #define XAH_VL_MEMO_DATA                0x0D
-// #define XAH_VL_MEMO_FORMAT              0x0E
-// #define XAH_ACCOUNT_ACCOUNT             0x01
-// #define XAH_ACCOUNT_DESTINATION         0x03
-// #define XAH_ACCOUNT_ISSUER              0x04
-// #define XAH_ACCOUNT_REGULAR_KEY         0x08
-
 #define XAH_CURRENCY_CURRENCY 0x01
-// #define XAH_UINT64_AMOUNT     0x01
-// #define XAH_UINT64_FEE        0x08
 
 // Array of type one is reserved for end-of-array marker so this
 // constant cannot possibly collide with anything in the future
