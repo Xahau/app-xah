@@ -1,11 +1,11 @@
 Transaction Type; OfferCreate
-Account;   rTooLkitCksh    5mQa67eaa2Ja     WHDBnHkpy   
+Account;   rTooLkitCks    h5mQa67eaa2     JaWHDBnHkpy   
 Fee; XAH 0.00001
 Network ID; 21337
 Flags; Fill or Kill
 Last Ledger Sequence; 7108682
 Taker Pays; GKO 2
-Issuer;   ruazs5h1qEsq    pke88pcqnase     Xdm6od2xc   
+Issuer;   ruazs5h1qEs    qpke88pcqna     seXdm6od2xc   
 Taker Gets; XAH 6
 Expiration; 534171558
 Offer Sequence; 4321
