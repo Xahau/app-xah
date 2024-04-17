@@ -45,7 +45,7 @@ static const char* resolve_transaction_name(uint16_t value) {
         case TRANSACTION_ESCROW_FINISH:
             return "Finish Escrow";
         case TRANSACTION_ACCOUNT_SET:
-            return "Account Setting";
+            return "Account Set";
         case TRANSACTION_ESCROW_CANCEL:
             return "Cancel Escrow";
         case TRANSACTION_SET_REGULAR_KEY:
