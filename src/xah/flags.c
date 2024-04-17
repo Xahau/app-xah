@@ -121,7 +121,7 @@ static const char *format_account_set_field_flags(uint32_t value) {
         case ASF_ACCOUNT_TXN_ID:
             return "Track Txn ID";
         case ASF_DEFAULT_RIPPLE:
-            return "Ripple by default";
+            return "Default Ripple";
         case ASF_DEPOSIT_AUTH:
             return "Deposit Auth";
         case ASF_DISABLE_MASTER:
@@ -209,7 +209,7 @@ static void format_trust_set_flags(uint32_t value, field_value_t *dst) {
 
     size_t offset = 0;
     if (HAS_FLAG(value, TF_SETF_AUTH)) {
-        offset = append_item(dst, offset, "Setf Auth");
+        offset = append_item(dst, offset, "Set Auth");
     }
 
     if (HAS_FLAG(value, TF_SET_NO_RIPPLE)) {
@@ -256,7 +256,7 @@ static void format_set_hook_flags(uint32_t value, field_value_t *dst) {
     }
 
     if (HAS_FLAG(value, HSF_NSDELETE)) {
-        offset = append_item(dst, offset, "NS Delete");
+        offset = append_item(dst, offset, "Namespace Delete");
     }
 
     if (HAS_FLAG(value, HSF_COLLECT)) {
