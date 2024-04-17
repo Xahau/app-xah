@@ -421,14 +421,14 @@ const char *resolve_field_name(field_t *field) {
                 return "Hook Parameter";
             case 24:
                 return "Hook Grant";
-            // case 93:
-            //     return "Hook Emission";
-            // case 94:
-            //     return "Import VLKey";
-            // case 95:
-            //     return "Active Validator";
-            // case 96:
-            //     return "Genesis Mint";
+                // case 93:
+                //     return "Hook Emission";
+                // case 94:
+                //     return "Import VLKey";
+                // case 95:
+                //     return "Active Validator";
+                // case 96:
+                //     return "Genesis Mint";
         }
     }
 
@@ -464,14 +464,14 @@ const char *resolve_field_name(field_t *field) {
                 return "Hook Parameters";
             case 20:
                 return "Hook Grants";
-            // case 93:
-            //     return "Hook Emissions";
-            // case 94:
-            //     return "Import VLKeys";
-            // case 95:
-            //     return "Active Validators";
-            // case 96:
-            //     return "Genesis Mints";
+                // case 93:
+                //     return "Hook Emissions";
+                // case 94:
+                //     return "Import VLKeys";
+                // case 95:
+                //     return "Active Validators";
+                // case 96:
+                //     return "Genesis Mints";
         }
     }
 

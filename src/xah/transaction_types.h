@@ -22,7 +22,7 @@
 
 #include "xah_parse.h"
 
-#define TRANSACTION_INVALID                0xFFFF
+#define TRANSACTION_INVALID                    0xFFFF
 #define TRANSACTION_PAYMENT                    0
 #define TRANSACTION_ESCROW_CREATE              1
 #define TRANSACTION_ESCROW_FINISH              2

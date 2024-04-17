@@ -248,7 +248,7 @@ static void format_set_hook_flags(uint32_t value, field_value_t *dst) {
 // SetHook flags
 #define HSF_OVERRIDE 0x00000001u
 #define HSF_NSDELETE 0x0000002u
-#define HSF_COLLECT 0x00000004u
+#define HSF_COLLECT  0x00000004u
 
     size_t offset = 0;
     if (HAS_FLAG(value, HSF_OVERRIDE)) {
