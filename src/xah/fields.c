@@ -336,7 +336,7 @@ const char *resolve_field_name(field_t *field) {
             case 20:
                 return "Validator To Disable";
             case 21:
-                return "Validator To ReEnable";
+                return "Validator To Re Enable";
             case 22:
                 return "Hook State Data";
             case 23:
