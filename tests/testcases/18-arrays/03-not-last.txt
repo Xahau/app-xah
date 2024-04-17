@@ -3,7 +3,7 @@ Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy
 Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Amount; XAH 0.01
 Currency [P1: S1]; ETH
-Issuer [P1: S1];   rKiCet8SdvW     xPXnAgYarFU     XMh1zCPz432Y   
+Issuer [P1: S1];   rKiCet8SdvWx    xPXnAgYarFUX     Mh1zCPz432Y   
 Memo Data [1]; Lorem
 Memo Fmt [1]; Lorem
 Fee; XAH 0.000015
