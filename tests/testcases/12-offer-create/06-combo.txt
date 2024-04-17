@@ -4,7 +4,10 @@ Fee; XAH 0.000010
 NetworkID; 21337
 Flags; 851968
 Last Ledger Sequence; 7108682
-Taker Pays; [object Object]
-Taker Gets; [object Object]
+Taker Pays; 8@8 12123
+Issuer;   ruazs5h1qEs     qpke88pcqna     seXdm6od2xc   
+Taker Gets; 0000000000000000000000003E2E3C0000000000 234567
+Currency; 0000000000000000000000003E2E3C0000000000
+Issuer;   ruazs5h1qEs     qpke88pcqna     seXdm6od2xc   
 Expiration; 534171558
 Offer Sequence; 4321
