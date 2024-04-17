@@ -1,5 +1,6 @@
 Transaction Type; Payment
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
+Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Source Tag; 4294967295
 Destination Tag; 4294967295
 Amount; XAH 100000000000
@@ -27,4 +28,3 @@ Fee; XAH 2.000000
 NetworkID; 21337
 Flags; 458752
 Last Ledger Sequence; 87108682
-Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   

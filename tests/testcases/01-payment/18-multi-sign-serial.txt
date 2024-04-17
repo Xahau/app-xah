@@ -1,7 +1,7 @@
 Transaction Type; Payment
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
+Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Amount; XAH 1
 Fee; XAH 0.000100
 NetworkID; 21337
 Signers; [object Object],[object Object]
-Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   

@@ -1,5 +1,6 @@
 Transaction Type; Payment
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
+Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Amount; XAH 100
 Send Max; USD 50
 Currency [P1: S1]; USD
@@ -10,4 +11,3 @@ Account [P2: S1];   r9vbV3EHvXWj     SkeQ6CAcYVPG   eq7TuiXY2X
 Account [P2: S2];   rLQrHSoJnzHz     mdFDHYoW85Cz   e8Teu97JN2
 Fee; XAH 0.000015
 NetworkID; 21337
-Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
