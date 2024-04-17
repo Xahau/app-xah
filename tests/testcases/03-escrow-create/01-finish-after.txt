@@ -1,6 +1,6 @@
 Transaction Type; EscrowCreate
-Account;   rTooLkitCks    h5mQa67eaa2     JaWHDBnHkpy   
-Destination;   rTooLkitCks    h5mQa67eaa2     JaWHDBnHkpy   
+Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
+Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Amount; XAH 0.01
 Finish After; 533171558
 Fee; XAH 0.00002

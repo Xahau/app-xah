@@ -1,6 +1,6 @@
 Transaction Type; EscrowCreate
-Account;   rTooLkitCks    h5mQa67eaa2     JaWHDBnHkpy   
-Destination;   rTooLkitCks    h5mQa67eaa2     JaWHDBnHkpy   
+Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
+Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Source Tag; 888
 Destination Tag; 1338
 Account Txn ID; f02eb74cb4f5d2e6ac8be70cea41cca872e680f9efd2027605f0b42666037aa8
