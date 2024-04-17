@@ -4,4 +4,4 @@ Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy
 Amount; XAH 0
 Cancel After; 533172758
 Fee; XAH 0.000020
-NetworkID; 21337
+Network ID; 21337

@@ -1,7 +1,7 @@
 Transaction Type; AccountSet
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Fee; XAH 0.000010
-NetworkID; 21337
+Network ID; 21337
 Domain; 6578616D706C652E636F6D
 Set Flag; 5
 Email Hash; 505350263FB896C545C901343E8EE2DA

@@ -1,7 +1,7 @@
 Transaction Type; PaymentChannelCreate
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Fee; XAH 0.000010
-NetworkID; 21337
+Network ID; 21337
 Amount; XAH 0
 Destination;   rf1BiGeXwwQo     i8Z2ueFYTEXS   wuJYfV2Jpn
 Settle Delay; 86400

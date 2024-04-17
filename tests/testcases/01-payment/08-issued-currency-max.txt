@@ -4,4 +4,4 @@ Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy
 Amount; XAH 200
 Send Max; USD 123.45
 Fee; XAH 0.000015
-NetworkID; 21337
+Network ID; 21337

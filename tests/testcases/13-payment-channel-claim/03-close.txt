@@ -1,7 +1,7 @@
 Transaction Type; PaymentChannelClaim
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Fee; XAH 0.000010
-NetworkID; 21337
+Network ID; 21337
 Flags; 131072
 Amount; XAH 100
 Balance; XAH 100

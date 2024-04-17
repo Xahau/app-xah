@@ -1,7 +1,7 @@
 Transaction Type; OfferCreate
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Fee; XAH 0.000010
-NetworkID; 21337
+Network ID; 21337
 Flags; 851968
 Last Ledger Sequence; 7108682
 Taker Pays; 8@8 12123
