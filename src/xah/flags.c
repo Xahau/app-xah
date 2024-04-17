@@ -254,11 +254,13 @@ static void format_set_hook_flags(uint32_t value, field_value_t *dst) {
     if (HAS_FLAG(value, HSF_OVERRIDE)) {
         offset = append_item(dst, offset, "Override");
     }
+
     if (HAS_FLAG(value, HSF_NSDELETE)) {
         offset = append_item(dst, offset, "NS Delete");
     }
+
     if (HAS_FLAG(value, HSF_COLLECT)) {
-        offset = append_item(dst, offset, "Collect");
+        append_item(dst, offset, "Collect");
     }
 }
 
@@ -268,7 +270,7 @@ static void format_uritoken_mint_flags(uint32_t value, field_value_t *dst) {
 
     size_t offset = 0;
     if (HAS_FLAG(value, TF_BURNABLE)) {
-        offset = append_item(dst, offset, "Burnable");
+        append_item(dst, offset, "Burnable");
     }
 }
 
@@ -278,7 +280,7 @@ static void format_claim_reward_flags(uint32_t value, field_value_t *dst) {
 
     size_t offset = 0;
     if (HAS_FLAG(value, TF_OPT_IN)) {
-        offset = append_item(dst, offset, "Opt Out");
+        append_item(dst, offset, "Opt Out");
     }
 }
 
