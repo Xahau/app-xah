@@ -99,7 +99,7 @@ def util_navigate(
             raise ValueError(f'Wrong text "{text}"')
 
     navigator.navigate_until_text_and_compare(nav_inst,
-                                              valid_instr,
+                                              valid_instr,  # type: ignore [arg-type]
                                               text,
                                               ROOT_SCREENSHOT_PATH,
                                               test_name,
