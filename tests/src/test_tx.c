@@ -49,7 +49,7 @@ static const char *testcases[] = {
     "../testcases/06-account-set/02-default-ripple.raw",
     "../testcases/06-account-set/03-deposit-auth.raw",
     "../testcases/06-account-set/04-disable-master.raw",
-    "../testcases/06-account-set/05-disallow-xrp.raw",
+    "../testcases/06-account-set/05-disallow-xah.raw",
     "../testcases/06-account-set/06-global-freeze.raw",
     "../testcases/06-account-set/07-no-freeze.raw",
     "../testcases/06-account-set/08-require-auth.raw",
