@@ -1,7 +1,5 @@
 {
   "TransactionType": "TrustSet",
-  "Account": "OWN_ADDR",
-  "Fee": "10",
   "NetworkID": 21337,
   "Flags": 262144,
   "Sequence": 25,
@@ -10,5 +8,7 @@
     "currency": "OK?",
     "issuer": "rsP3mgGb2tcYUrxiLFiHJiQXhsziegtwBc"
   },
-  "SigningPubKey": "OWN_PUBKEY"
+  "Fee": "10",
+  "SigningPubKey": "OWN_PUBKEY",
+  "Account": "OWN_ADDR"
 }

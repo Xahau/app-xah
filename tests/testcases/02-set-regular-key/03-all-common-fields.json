@@ -1,11 +1,14 @@
 {
   "TransactionType": "SetRegularKey",
-  "Account": "OWN_ADDR",
-  "Fee": "18",
   "NetworkID": 21337,
-  "Sequence": 31,
+  "Flags": 0,
   "SourceTag": 888,
+  "Sequence": 31,
   "AccountTxnID": "F02EB74CB4F5D2E6AC8BE70CEA41CCA872E680F9EFD2027605F0B42666037AA8",
+  "Fee": "18",
+  "SigningPubKey": "OWN_PUBKEY",
+  "Account": "OWN_ADDR",
+  "RegularKey": "rTooLkitCksh5mQa67eaa2JaWHDBnHkpy",
   "Memos": [
     {
       "Memo": {
@@ -21,12 +24,9 @@
     {
       "Memo": {
         "MemoType": "68747470733A2F2F7777772E787270746F6F6C6B69742E636F6D",
-        "MemoFormat": "746578742F706C61696E",
-        "MemoData": "546F776F204C616273203C332054686520585250204C6564676572202620496E7465726C65646765722050726F746F636F6C"
+        "MemoData": "546F776F204C616273203C332054686520585250204C6564676572202620496E7465726C65646765722050726F746F636F6C",
+        "MemoFormat": "746578742F706C61696E"
       }
     }
-  ],
-  "RegularKey": "rTooLkitCksh5mQa67eaa2JaWHDBnHkpy",
-  "Flags": 0,
-  "SigningPubKey": "OWN_PUBKEY"
+  ]
 }

@@ -1,17 +1,17 @@
 {
   "TransactionType": "SetHook",
-  "Account": "OWN_ADDR",
-  "Fee": "50",
   "NetworkID": 21337,
   "Flags": 0,
   "Sequence": 3,
+  "Fee": "50",
+  "SigningPubKey": "OWN_PUBKEY",
+  "Account": "OWN_ADDR",
   "Hooks": [
     {
       "Hook": {
-        "CreateCode": "",
-        "Flags": 1
+        "Flags": 1,
+        "CreateCode": ""
       }
     }
-  ],
-  "SigningPubKey": "OWN_PUBKEY"
+  ]
 }
