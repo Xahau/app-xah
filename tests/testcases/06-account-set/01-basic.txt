@@ -3,7 +3,7 @@ Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy
 Fee; XAH 0.00001
 Network ID; 21337
 Domain; example.com
-Set Flag; 5
+Set Flag; Account Txn ID
 Email Hash; 505350263fb896c545c901343e8ee2da
 Message Key; 6014a17f454e72494cec232e05b0d881b61807d1ca19f32b8125e390ff14e66d
 Wallet Locator; ea8fbf830b802cf8e0976dfd66be512c892bdea79baecdb7669db3ac7b6311e2
