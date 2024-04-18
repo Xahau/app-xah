@@ -104,6 +104,8 @@ static const char* resolve_transaction_name(uint16_t value) {
             return "URIToken Create Offer";
         case TRANSACTION_URITOKEN_CANCEL_SELL_OFFER:
             return "URIToken Cancel Offer";
+        case TRANSACTION_REMIT:
+            return "Remit";
         case TRANSACTION_GENESIS_MINT:
             return "Genesis Mint";
         case TRANSACTION_IMPORT:

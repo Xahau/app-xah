@@ -56,6 +56,7 @@
 #define TRANSACTION_URITOKEN_BUY               47
 #define TRANSACTION_URITOKEN_CREATE_SELL_OFFER 48
 #define TRANSACTION_URITOKEN_CANCEL_SELL_OFFER 49
+#define TRANSACTION_REMIT                      95
 #define TRANSACTION_GENESIS_MINT               96
 #define TRANSACTION_IMPORT                     97
 #define TRANSACTION_CLAIM_REWARD               98

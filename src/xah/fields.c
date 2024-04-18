@@ -347,6 +347,8 @@ const char *resolve_field_name(field_t *field) {
                 return "Hook Param Value";
             case 26:
                 return "Blob";
+            case 99:
+                return "URI Token IDs";
         }
     }
 
@@ -372,6 +374,8 @@ const char *resolve_field_name(field_t *field) {
                 return "Emit Callback";
             case 16:
                 return "Hook Account";
+            case 99:
+                return "Inform";
         }
     }
 
@@ -429,6 +433,10 @@ const char *resolve_field_name(field_t *field) {
                 //     return "Active Validator";
                 // case 96:
                 //     return "Genesis Mint";
+            case 91:
+                return "AmountEntry";
+            case 92:
+                return "Mint URI Token";
         }
     }
 
@@ -472,6 +480,8 @@ const char *resolve_field_name(field_t *field) {
                 //     return "Active Validators";
                 // case 96:
                 //     return "Genesis Mints";
+            case 92:
+                return "Amounts";
         }
     }
 
