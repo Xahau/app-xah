@@ -173,6 +173,11 @@ static bool should_format_blob_as_string(field_t* field) {
 void blob_formatter(field_t* field, field_value_t* dst) {
     bool too_long = false;
     size_t max_size = sizeof(dst->buf) - 1;
+    
+    if (field->data.ptr == NULL) {
+        strncpy(dst->buf, "[empty]", sizeof(dst->buf));
+        return;
+    }
 
     if (should_format_blob_as_string(field)) {
         memcpy(dst->buf, field->data.ptr, MIN(max_size, field->length));
