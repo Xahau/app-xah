@@ -177,7 +177,7 @@ void blob_formatter(field_t* field, field_value_t* dst) {
     bool too_long = false;
     size_t max_size = sizeof(dst->buf) - 1;
     
-    if (field->data.ptr[0] == '\0') {
+    if (sizeof(field->data.ptr) == 0) {
         strncpy(dst->buf, "[empty]", sizeof(dst->buf));
         return;
     }
