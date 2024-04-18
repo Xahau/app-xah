@@ -164,6 +164,9 @@ static bool should_format_blob_as_string(field_t* field) {
         case XAH_VL_MEMO_FORMAT:
             return true;
         case XAH_VL_MEMO_DATA:
+        case XAH_VL_HOOK_PARAMETER_NAME:
+        case XAH_VL_HOOK_PARAMETER_VALUE:
+        case XAH_VL_BLOB:
             return is_purely_ascii(field->data.ptr, field->length, false);
         default:
             return false;
@@ -174,7 +177,7 @@ void blob_formatter(field_t* field, field_value_t* dst) {
     bool too_long = false;
     size_t max_size = sizeof(dst->buf) - 1;
     
-    if (field->data.ptr == NULL) {
+    if (field->data.ptr == "") {
         strncpy(dst->buf, "[empty]", sizeof(dst->buf));
         return;
     }
