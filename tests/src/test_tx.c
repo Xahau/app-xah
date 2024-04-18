@@ -95,7 +95,7 @@ static const char *testcases[] = {
     "../testcases/20-import/01-basic.raw",
     "../testcases/20-import/02-issuer.raw",
     "../testcases/21-invoke/01-basic.raw",
-    "../testcases/21-invoke/02-issuer.raw",
+    "../testcases/21-invoke/02-blob.raw",
     "../testcases/21-invoke/03-params.raw",
     "../testcases/22-set-hook/01-noop.raw",
     "../testcases/22-set-hook/02-create.raw",
