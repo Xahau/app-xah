@@ -75,7 +75,7 @@ static const char *testcases[] = {
     "../testcases/13-payment-channel-claim/01-basic.raw",
     "../testcases/13-payment-channel-claim/02-renew.raw",
     "../testcases/13-payment-channel-claim/03-close.raw",
-    "../testcases/13-payment-channel-claim/03-basic-currency.raw",
+    "../testcases/13-payment-channel-claim/04-basic-currency.raw",
     "../testcases/14-payment-channel-create/01-basic.raw",
     "../testcases/14-payment-channel-create/02-basic-currency.raw",
     "../testcases/15-payment-channel-fund/01-basic.raw",
