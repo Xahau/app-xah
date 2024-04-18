@@ -1,10 +1,10 @@
 {
   "TransactionType": "OfferCancel",
+  "Account": "OWN_ADDR",
+  "Fee": "10",
   "NetworkID": 21337,
   "Flags": 0,
   "Sequence": 25,
   "OfferSequence": 89,
-  "Fee": "10",
-  "SigningPubKey": "OWN_PUBKEY",
-  "Account": "OWN_ADDR"
+  "SigningPubKey": "OWN_PUBKEY"
 }

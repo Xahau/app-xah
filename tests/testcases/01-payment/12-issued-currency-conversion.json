@@ -1,18 +1,13 @@
 {
   "TransactionType": "Payment",
-  "NetworkID": 21337,
-  "Flags": 0,
-  "Sequence": 7,
+  "Account": "OWN_ADDR",
+  "Destination": "rTooLkitCksh5mQa67eaa2JaWHDBnHkpy",
   "Amount": "100000000",
-  "Fee": "15",
   "SendMax": {
     "value": "50",
     "currency": "USD",
     "issuer": "rvYAfWj5gh67oV6fW32ZzP3Aw4Eubs59B"
   },
-  "SigningPubKey": "OWN_PUBKEY",
-  "Account": "OWN_ADDR",
-  "Destination": "rTooLkitCksh5mQa67eaa2JaWHDBnHkpy",
   "Paths": [
     [
       {
@@ -32,5 +27,10 @@
         "account": "rLQrHSoJnzHzmdFDHYoW85Cze8Teu97JN2"
       }
     ]
-  ]
+  ],
+  "Fee": "15",
+  "NetworkID": 21337,
+  "Flags": 0,
+  "Sequence": 7,
+  "SigningPubKey": "OWN_PUBKEY"
 }

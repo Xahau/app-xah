@@ -1,11 +1,10 @@
 {
   "TransactionType": "Invoke",
+  "Account": "OWN_ADDR",
+  "Fee": "15",
   "NetworkID": 21337,
   "Flags": 0,
   "Sequence": 3,
-  "Fee": "15",
-  "SigningPubKey": "OWN_PUBKEY",
-  "Account": "OWN_ADDR",
   "HookParameters": [
     {
       "HookParameter": {
@@ -13,5 +12,6 @@
         "HookParameterValue": "DEADBEEF"
       }
     }
-  ]
+  ],
+  "SigningPubKey": "OWN_PUBKEY"
 }

@@ -1,6 +1,6 @@
 Transaction Type; Set Hook
-Network ID; 21337
-Fee; XAH 0.00005
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
-Flags [1]; Namespace Delete
+Fee; XAH 0.00005
+Network ID; 21337
 Hook Namespace [1]; 0000000000000000000000000000000000000000000000000000000000000000
+Flags [1]; Namespace Delete

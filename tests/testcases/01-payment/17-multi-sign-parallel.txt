@@ -1,6 +1,6 @@
 Transaction Type; Payment
-Network ID; 21337
-Amount; XAH 1
-Fee; XAH 0.0001
 Account;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
+Amount; XAH 1
+Fee; XAH 0.0001
+Network ID; 21337

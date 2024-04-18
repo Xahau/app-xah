@@ -1,10 +1,10 @@
 {
   "TransactionType": "SetRegularKey",
-  "NetworkID": 21337,
-  "Flags": 0,
-  "Sequence": 31,
-  "Fee": "18",
-  "SigningPubKey": "OWN_PUBKEY",
   "Account": "OWN_ADDR",
-  "RegularKey": "rTooLkitCksh5mQa67eaa2JaWHDBnHkpy"
+  "Fee": "18",
+  "NetworkID": 21337,
+  "Sequence": 31,
+  "RegularKey": "rTooLkitCksh5mQa67eaa2JaWHDBnHkpy",
+  "Flags": 0,
+  "SigningPubKey": "OWN_PUBKEY"
 }

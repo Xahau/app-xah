@@ -1,9 +1,9 @@
 {
   "TransactionType": "SetRegularKey",
-  "NetworkID": 21337,
-  "Flags": 0,
-  "Sequence": 31,
+  "Account": "OWN_ADDR",
   "Fee": "18",
-  "SigningPubKey": "OWN_PUBKEY",
-  "Account": "OWN_ADDR"
+  "NetworkID": 21337,
+  "Sequence": 31,
+  "Flags": 0,
+  "SigningPubKey": "OWN_PUBKEY"
 }
