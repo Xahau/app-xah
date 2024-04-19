@@ -96,28 +96,28 @@ const char *resolve_field_name(field_t *field) {
                 return "Quality In";
             case 21:
                 return "Quality Out";
-            case 22:
-                return "Stamp Escrow";
-            case 23:
-                return "Bond Amount";
-            case 24:
-                return "Load Fee";
+            // case 22:
+            //     return "Stamp Escrow";
+            // case 23:
+            //     return "Bond Amount";
+            // case 24:
+            //     return "Load Fee";
             case 25:
                 return "Offer Sequence";
             case 26:
                 return "First Ledger Sequence";
             case 27:
                 return "Last Ledger Sequence";
-            case 28:
-                return "Transaction Index";
+            // case 28:
+            //     return "Transaction Index";
             case 29:
                 return "Operation Limit";
-            case 30:
-                return "Reference Fee Units";
-            case 31:
-                return "Reserve Base";
-            case 32:
-                return "RReserve Increment";
+            // case 30:
+            //     return "Reference Fee Units";
+            // case 31:
+            //     return "Reserve Base";
+            // case 32:
+            //     return "Reserve Increment";
             case 33:
                 return "Set Flag";
             case 34:
@@ -347,6 +347,22 @@ const char *resolve_field_name(field_t *field) {
                 return "Hook Param Value";
             case 26:
                 return "Blob";
+        }
+    }
+
+    if (field->data_type == STI_VECTOR256) {
+        switch (field->id) {
+            // vector 256
+            case 1:
+                return "Indexes";
+            case 2:
+                return "Hashes";
+            case 3:
+                return "Amendments";
+            case 4:
+                return "NFTokenOffers";
+            case 5:
+                return "HookNamespaces";
             case 99:
                 return "URI Token IDs";
         }

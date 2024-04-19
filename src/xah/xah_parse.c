@@ -207,6 +207,34 @@ err_t read_amount(parseContext_t *context, field_t *field) {
     return err;
 }
 
+err_t handle_vector256_field(parseContext_t *context, field_t *field) {
+    field->data_type = STI_VECTOR256;
+
+    err_t err;
+    // uint8_t value;
+    // CHECK(read_next_byte(context, &value));
+    // uint16_t data_length = value;
+    // uint16_t num_hashes = value / 32;
+
+    // context->current_array = field->id;
+    // context->array_index1 = 0;
+    // context->array_index2 = 0;
+
+    // // Calculate the number of Hash256 entries in the Vector256
+    // uint8_t num_hashes = total_length / 32;
+
+    // // Read each Hash256 and append as a new field
+    // for (uint8_t i = 0; i < num_hashes; i++) {
+    //     field_t *hash_field;
+    //     CHECK(append_new_field(context, &hash_field));
+    //     hash_field->data_type = STI_HASH256;
+    //     hash_field->id = XAH_VECTOR256_URITOKEN_IDS;
+    //     CHECK(read_fixed_size_field(context, hash_field, sizeof(hash256_t)));
+    // }
+    err.err = SUCCESS;
+    return err;
+}
+
 void handle_array_field(parseContext_t *context, field_t *field) {
     if (field->id != ARR_END) {
         // Begin array
@@ -354,10 +382,14 @@ err_t read_field_value(parseContext_t *context, field_t *field) {
             err = read_amount(context, field);
             break;
         case STI_VL:
+        case STI_VECTOR256:
             // Intentional fall-through
         case STI_ACCOUNT:
             err = read_variable_length_field(context, field);
             break;
+        // case STI_VECTOR256:
+        //     err = handle_vector256_field(context, field);
+        //     break;
         case STI_ARRAY:
             handle_array_field(context, field);
             break;

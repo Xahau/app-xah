@@ -169,6 +169,7 @@ static bool should_format_blob_as_string(field_t* field) {
         case XAH_VL_HOOK_PARAMETER_NAME:
         case XAH_VL_HOOK_PARAMETER_VALUE:
         case XAH_VL_BLOB:
+        case XAH_VL_URI:
             return is_purely_ascii(field->data.ptr, field->length, false);
         default:
             return false;

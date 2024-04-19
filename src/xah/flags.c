@@ -311,6 +311,9 @@ void format_flags(field_t *field, field_value_t *dst) {
         case TRANSACTION_CLAIM_REWARD:
             format_claim_reward_flags(value, dst);
             break;
+        case TRANSACTION_REMIT:
+            format_uritoken_mint_flags(value, dst);
+            break;
         default:
             snprintf(dst->buf,
                      sizeof(dst->buf),
