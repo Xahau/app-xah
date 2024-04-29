@@ -1,8 +1,8 @@
 # XAH Wallet App for Ledger devices
 
-[![Ensure compliance with Ledger guidelines](https://github.com/LedgerHQ/app-xrp/actions/workflows/guidelines_enforcer.yml/badge.svg)](https://github.com/LedgerHQ/app-xrp/actions/workflows/guidelines_enforcer.yml)
+[![Ensure compliance with Ledger guidelines](https://github.com/LedgerHQ/app-xah/actions/workflows/guidelines_enforcer.yml/badge.svg)](https://github.com/LedgerHQ/app-xah/actions/workflows/guidelines_enforcer.yml)
 
-[![Build and run functional tests using ragger through reusable workflow](https://github.com/LedgerHQ/app-xrp/actions/workflows/build_and_functional_tests.yml/badge.svg)](https://github.com/LedgerHQ/app-xrp/actions/workflows/build_and_functional_tests.yml)
+[![Build and run functional tests using ragger through reusable workflow](https://github.com/LedgerHQ/app-xah/actions/workflows/build_and_functional_tests.yml/badge.svg)](https://github.com/LedgerHQ/app-xah/actions/workflows/build_and_functional_tests.yml)
 
 ## Introduction
 
@@ -46,6 +46,7 @@ The XAH wallet app comes with the following features:
   - URITokenCreateSellOffer
   - URITokenCancelSellOffer
   - URITokenMint
+  - Remit
 - Support for all transaction common fields such as memos, hook parameters, network id
 - Support for issued assets such as SOLO, stocks and ETFs
 - Support for signing on behalf of others
@@ -101,11 +102,11 @@ An example of a basic payment transaction using this library is shown below:
 ```javascript
 import Transport from "@ledgerhq/hw-transport-node-hid";
 // import Transport from "@ledgerhq/hw-transport-u2f"; // for browser
-import Xrp from "@ledgerhq/hw-app-xah";
+import Xah from "@ledgerhq/hw-app-xah";
 import { encode } from "ripple-binary-codec";
 
 function establishConnection() {
-  return Transport.create().then((transport) => new Xrp(transport));
+  return Transport.create().then((transport) => new Xah(transport));
 }
 
 function fetchAddress(xah) {
@@ -215,17 +216,6 @@ retrieveSignerData(transactionJSON)
   .catch((e) => console.log(`An error occurred (${e.message})`));
 ```
 
-### Additional Notes
-
-From version 2.0.0 of the XAH wallet app it is possible to sign larger
-transactions than in previous versions. In order to enable support for larger transactions,
-there have been slight modifications to the transport protocol, which is used to
-communicate between the client and the device.
-
-The protocol changes are fully backwards-compatible with previous versions of
-[hw-app-xah](https://www.npmjs.com/package/@ledgerhq/hw-app-xah), but in order
-to sign larger transactions you must use version 5.12.0 or above of [hw-app-xah](https://www.npmjs.com/package/@ledgerhq/hw-app-xah).
-
 ### Limitations
 
 Because of resource constraints the following limits apply for the respective
@@ -268,6 +258,6 @@ make load
 ## Testing
 
 Manual testing can be conducted with the help of the testing utility
-[TowoLabs/ledger-tests-xah](https://github.com/TowoLabs/ledger-tests-xrp).
+[Xahau/ledger-tests-xah](https://github.com/Xahau/ledger-tests-xah).
 Make sure that your device is running the latest firmware and then follow
 the instructions in the test repository.
