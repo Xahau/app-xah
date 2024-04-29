@@ -116,6 +116,12 @@ static const char *testcases[] = {
     "../testcases/27-uritoken-mint/01-basic.raw",
     "../testcases/27-uritoken-mint/02-transfer.raw",
     "../testcases/27-uritoken-mint/03-burnable.raw",
+    "../testcases/28-remit/01-activate.raw",
+    "../testcases/28-remit/02-native.raw",
+    "../testcases/28-remit/03-issued-currency.raw",
+    "../testcases/28-remit/04-mint-token.raw",
+    "../testcases/28-remit/05-transfer-token.raw",
+    "../testcases/28-remit/06-all.raw",
     NULL,
 };
 
