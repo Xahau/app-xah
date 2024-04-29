@@ -217,8 +217,7 @@ err_t read_vector256_field(parseContext_t *context, field_t *field) {
 
     uint16_t count = value / XAH_VECTOR256_SIZE;
     read_fixed_size_field(context, field, XAH_VECTOR256_SIZE * count);
-    for (size_t i = 0; i < count; i++)
-    {
+    for (size_t i = 0; i < count; i++) {
         field_t *hash256;
         CHECK(append_new_field(context, &hash256));
         hash256->data_type = STI_HASH256;
