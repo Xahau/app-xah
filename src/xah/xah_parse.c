@@ -203,7 +203,7 @@ err_t read_amount(parseContext_t *context, field_t *field) {
         issuer->data.account = (xah_account_t *) (field->data.ptr + 28);
         issuer->length = XAH_ACCOUNT_SIZE;
     }
-    
+
     return err;
 }
 

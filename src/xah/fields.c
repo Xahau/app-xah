@@ -138,28 +138,28 @@ const char *resolve_field_name(field_t *field) {
                 return "Ticket Sequence";
             case 42:
                 return "NFToken Taxon";
-            // case 43:
-            //     return "Minted NFTokens";
-            // case 44:
-            //     return "Burned NFTokens";
-            // case 45:
-            //     return "Hook State Count";
-            // case 46:
-            //     return "Emit Generation";
-            // case 49:
-            //     return "Lock Count";
-            // case 50:
-            //     return "First NFToken Sequence";
-            // case 96:
-            //     return "Xahau Activation Lgr Seq";
-            // case 97:
-            //     return "Import Sequence";
-            // case 98:
-            //     return "Reward Time";
-            // case 99:
-            //     return "Reward Lgr First";
-            // case 100:
-            //     return "Reward Lgr Last";
+                // case 43:
+                //     return "Minted NFTokens";
+                // case 44:
+                //     return "Burned NFTokens";
+                // case 45:
+                //     return "Hook State Count";
+                // case 46:
+                //     return "Emit Generation";
+                // case 49:
+                //     return "Lock Count";
+                // case 50:
+                //     return "First NFToken Sequence";
+                // case 96:
+                //     return "Xahau Activation Lgr Seq";
+                // case 97:
+                //     return "Import Sequence";
+                // case 98:
+                //     return "Reward Time";
+                // case 99:
+                //     return "Reward Lgr First";
+                // case 100:
+                //     return "Reward Lgr Last";
         }
     }
 
@@ -281,16 +281,16 @@ const char *resolve_field_name(field_t *field) {
             //     return "Delivered Amount";
             case 19:
                 return "NFToken Broker Fee";
-            // case 20:
-            //     return "Hook Callback Fee";
-            // case 21:
-            //     return "Locked Balance";
-            // case 22:
-            //     return "Base Fee Drops";
-            // case 23:
-            //     return "Reserve Base Drops";
-            // case 24:
-            //     return "Reserve Increment Drops";
+                // case 20:
+                //     return "Hook Callback Fee";
+                // case 21:
+                //     return "Locked Balance";
+                // case 22:
+                //     return "Base Fee Drops";
+                // case 23:
+                //     return "Reserve Base Drops";
+                // case 24:
+                //     return "Reserve Increment Drops";
         }
     }
 
@@ -445,14 +445,14 @@ const char *resolve_field_name(field_t *field) {
                 return "Amount Entry";
             case 92:
                 return "Mint URIToken";
-            // case 93:
-            //     return "Hook Emission";
-            // case 94:
-            //     return "Import VLKey";
-            // case 95:
-            //     return "Active Validator";
-            // case 96:
-            //     return "Genesis Mint";
+                // case 93:
+                //     return "Hook Emission";
+                // case 94:
+                //     return "Import VLKey";
+                // case 95:
+                //     return "Active Validator";
+                // case 96:
+                //     return "Genesis Mint";
         }
     }
 
@@ -490,14 +490,14 @@ const char *resolve_field_name(field_t *field) {
                 return "Hook Grants";
             case 92:
                 return "Amounts";
-            // case 93:
-            //     return "Hook Emissions";
-            // case 94:
-            //     return "Import VLKeys";
-            // case 95:
-            //     return "Active Validators";
-            // case 96:
-            //     return "Genesis Mints";
+                // case 93:
+                //     return "Hook Emissions";
+                // case 94:
+                //     return "Import VLKeys";
+                // case 95:
+                //     return "Active Validators";
+                // case 96:
+                //     return "Genesis Mints";
         }
     }
 
