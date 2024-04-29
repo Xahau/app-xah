@@ -4,4 +4,4 @@ Network ID; 21337
 Fee; XAH 0.000015
 Destination;   rTooLkitCks     h5mQa67eaa2     JaWHDBnHkpy   
 Amount [1]; USD 1
-Issuer;   rExKpRKXNz25    UAjbckCRtQs     JFcSfjL9Er3   
+Issuer [1];   rExKpRKXNz25    UAjbckCRtQs     JFcSfjL9Er3   
