@@ -200,6 +200,11 @@ void blob_formatter(field_t* field, field_value_t* dst) {
     }
 }
 
+void vector_formatter256(field_t* field, field_value_t* dst) {
+    uint16_t count = field->length / XAH_VECTOR256_SIZE;
+    snprintf(dst->buf, sizeof(dst->buf), "%d", count);
+}
+
 void account_formatter(field_t* field, field_value_t* dst) {
     if (field->data.ptr == NULL) {
         strncpy(dst->buf, "[empty]", sizeof(dst->buf));

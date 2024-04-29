@@ -46,8 +46,10 @@ void format_field(field_t* field, field_value_t* dst) {
             amount_formatter(field, dst);
             break;
         case STI_VL:
-        case STI_VECTOR256:
             blob_formatter(field, dst);
+            break;
+        case STI_VECTOR256:
+            vector_formatter256(field, dst);
             break;
         case STI_ACCOUNT:
             account_formatter(field, dst);

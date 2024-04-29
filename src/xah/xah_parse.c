@@ -203,35 +203,30 @@ err_t read_amount(parseContext_t *context, field_t *field) {
         issuer->data.account = (xah_account_t *) (field->data.ptr + 28);
         issuer->length = XAH_ACCOUNT_SIZE;
     }
-
+    
     return err;
 }
 
-err_t handle_vector256_field(parseContext_t *context, field_t *field) {
+err_t read_vector256_field(parseContext_t *context, field_t *field) {
     field->data_type = STI_VECTOR256;
 
     err_t err;
-    // uint8_t value;
-    // CHECK(read_next_byte(context, &value));
-    // uint16_t data_length = value;
-    // uint16_t num_hashes = value / 32;
+    uint8_t value;
 
-    // context->current_array = field->id;
-    // context->array_index1 = 0;
-    // context->array_index2 = 0;
+    CHECK(read_next_byte(context, &value));
 
-    // // Calculate the number of Hash256 entries in the Vector256
-    // uint8_t num_hashes = total_length / 32;
+    uint16_t count = value / XAH_VECTOR256_SIZE;
+    read_fixed_size_field(context, field, XAH_VECTOR256_SIZE * count);
+    for (size_t i = 0; i < count; i++)
+    {
+        field_t *hash256;
+        CHECK(append_new_field(context, &hash256));
+        hash256->data_type = STI_HASH256;
+        hash256->id = XAH_HASH256_URI_TOKEN_ID;
+        hash256->data.hash256 = (hash256_t *) (field->data.ptr + (i * 32));
+        hash256->length = XAH_VECTOR256_SIZE;
+    }
 
-    // // Read each Hash256 and append as a new field
-    // for (uint8_t i = 0; i < num_hashes; i++) {
-    //     field_t *hash_field;
-    //     CHECK(append_new_field(context, &hash_field));
-    //     hash_field->data_type = STI_HASH256;
-    //     hash_field->id = XAH_VECTOR256_URITOKEN_IDS;
-    //     CHECK(read_fixed_size_field(context, hash_field, sizeof(hash256_t)));
-    // }
-    err.err = SUCCESS;
     return err;
 }
 
@@ -382,14 +377,13 @@ err_t read_field_value(parseContext_t *context, field_t *field) {
             err = read_amount(context, field);
             break;
         case STI_VL:
-        case STI_VECTOR256:
             // Intentional fall-through
         case STI_ACCOUNT:
             err = read_variable_length_field(context, field);
             break;
-        // case STI_VECTOR256:
-        //     err = handle_vector256_field(context, field);
-        //     break;
+        case STI_VECTOR256:
+            err = read_vector256_field(context, field);
+            break;
         case STI_ARRAY:
             handle_array_field(context, field);
             break;

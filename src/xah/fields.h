@@ -304,6 +304,7 @@ typedef enum {
 
 #define XAH_ACCOUNT_SIZE  20
 #define XAH_CURRENCY_SIZE 20
+#define XAH_VECTOR256_SIZE 32
 
 typedef struct {
     uint8_t buf[XAH_ACCOUNT_SIZE];
