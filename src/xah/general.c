@@ -50,18 +50,18 @@ static const char* resolve_transaction_name(uint16_t value) {
             return "Cancel Escrow";
         case TRANSACTION_SET_REGULAR_KEY:
             return "Set Regular Key";
-        case TRANSACTION_NICKNAME_SET:
-            return "Nickname Set";
+        // case TRANSACTION_NICKNAME_SET:
+        //     return "Nickname Set";
         case TRANSACTION_OFFER_CREATE:
             return "Create Offer";
         case TRANSACTION_OFFER_CANCEL:
             return "Cancel Offer";
-        case TRANSACTION_CONTRACT:
-            return "Contract";
+        // case TRANSACTION_CONTRACT:
+        //     return "Contract";
         case TRANSACTION_TICKET_CREATE:
             return "Ticket Create";
-        case TRANSACTION_TICKET_CANCEL:
-            return "Ticket Cancel";
+        // case TRANSACTION_TICKET_CANCEL:
+        //     return "Ticket Cancel";
         case TRANSACTION_SIGNER_LIST_SET:
             return "Set Signer List";
         case TRANSACTION_PAYMENT_CHANNEL_CREATE:
@@ -69,7 +69,7 @@ static const char* resolve_transaction_name(uint16_t value) {
         case TRANSACTION_PAYMENT_CHANNEL_FUND:
             return "Fund Channel";
         case TRANSACTION_PAYMENT_CHANNEL_CLAIM:
-            return "Channel Claim";
+            return "Claim Channel";
         case TRANSACTION_CHECK_CREATE:
             return "Create Check";
         case TRANSACTION_CHECK_CASH:
@@ -77,23 +77,23 @@ static const char* resolve_transaction_name(uint16_t value) {
         case TRANSACTION_CHECK_CANCEL:
             return "Cancel Check";
         case TRANSACTION_DEPOSIT_PREAUTH:
-            return "Preauth. Deposit";
+            return "Deposit Preauth.";
         case TRANSACTION_TRUST_SET:
             return "Set Trust Line";
         case TRANSACTION_ACCOUNT_DELETE:
             return "Delete Account";
         case TRANSACTION_SET_HOOK:
             return "Set Hook";
-        case TRANSACTION_NFTOKEN_MINT:
-            return "NFToken Mint";
-        case TRANSACTION_NFTOKEN_BURN:
-            return "NFToken Burn";
-        case TRANSACTION_NFTOKEN_CREATE_OFFER:
-            return "NFToken Create Offer";
-        case TRANSACTION_NFTOKEN_CANCEL_OFFER:
-            return "NFToken Cancel Offer";
-        case TRANSACTION_NFTOKEN_ACCEPT_OFFER:
-            return "NFToken Accept Offer";
+        // case TRANSACTION_NFTOKEN_MINT:
+        //     return "NFToken Mint";
+        // case TRANSACTION_NFTOKEN_BURN:
+        //     return "NFToken Burn";
+        // case TRANSACTION_NFTOKEN_CREATE_OFFER:
+        //     return "NFToken Create Offer";
+        // case TRANSACTION_NFTOKEN_CANCEL_OFFER:
+        //     return "NFToken Cancel Offer";
+        // case TRANSACTION_NFTOKEN_ACCEPT_OFFER:
+        //     return "NFToken Accept Offer";
         case TRANSACTION_URITOKEN_MINT:
             return "URIToken Mint";
         case TRANSACTION_URITOKEN_BURN:
@@ -106,8 +106,8 @@ static const char* resolve_transaction_name(uint16_t value) {
             return "URIToken Cancel Offer";
         case TRANSACTION_REMIT:
             return "Remit";
-        case TRANSACTION_GENESIS_MINT:
-            return "Genesis Mint";
+        // case TRANSACTION_GENESIS_MINT:
+        //     return "Genesis Mint";
         case TRANSACTION_IMPORT:
             return "Import";
         case TRANSACTION_CLAIM_REWARD:
