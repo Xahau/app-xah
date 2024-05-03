@@ -106,36 +106,57 @@ static void format_account_set_transaction_flags(uint32_t value, field_value_t *
 
 static const char *format_account_set_field_flags(uint32_t value) {
 // AccountSet flags for fields SetFlag and ClearFlag
-#define ASF_ACCOUNT_TXN_ID 5
-#define ASF_DEFAULT_RIPPLE 8
-#define ASF_DEPOSIT_AUTH   9
-#define ASF_DISABLE_MASTER 4
-#define ASF_DISALLOW_XAH   3
-#define ASF_GLOBAL_FREEZE  7
-#define ASF_NO_FREEZE      6
-#define ASF_REQUIRE_AUTH   2
-#define ASF_REQUIRE_DEST   1
+#define ASF_REQUIRE_DEST                    1
+#define ASF_REQUIRE_AUTH                    2
+#define ASF_DISALLOW_XAH                    3
+#define ASF_DISABLE_MASTER                  4
+#define ASF_ACCOUNT_TXN_ID                  5
+#define ASF_NO_FREEZE                       6
+#define ASF_GLOBAL_FREEZE                   7
+#define ASF_DEFAULT_RIPPLE                  8
+#define ASF_DEPOSIT_AUTH                    9
+#define ASF_AUTH_TOKEN_MINTER               10
+#define ASF_TSH_COLLECT                     11
+#define ASF_DISALLOW_INCOMING_NFTOKEN_OFFER 12
+#define ASF_DISALLOW_INCOMING_CHECK         13
+#define ASF_DISALLOW_INCOMING_PAYCHAN       14
+#define ASF_DISALLOW_INCOMING_TRUSTLINE     15
+#define ASF_DISALLOW_INCOMING_REMIT         16
 
     // Logic is different because only one flag is allowed per field
     switch (value) {
+        case ASF_REQUIRE_DEST:
+            return "Require Dest";
+        case ASF_REQUIRE_AUTH:
+            return "Require Auth";
+        case ASF_DISALLOW_XAH:
+            return "Disallow XAH";
+        case ASF_DISABLE_MASTER:
+            return "Disable Master";
         case ASF_ACCOUNT_TXN_ID:
             return "Track Txn ID";
+        case ASF_NO_FREEZE:
+            return "No Freeze";
+        case ASF_GLOBAL_FREEZE:
+            return "Global Freeze";
         case ASF_DEFAULT_RIPPLE:
             return "Default Ripple";
         case ASF_DEPOSIT_AUTH:
             return "Deposit Auth";
-        case ASF_DISABLE_MASTER:
-            return "Disable Master";
-        case ASF_DISALLOW_XAH:
-            return "Disallow XAH";
-        case ASF_GLOBAL_FREEZE:
-            return "Global Freeze";
-        case ASF_NO_FREEZE:
-            return "No Freeze";
-        case ASF_REQUIRE_AUTH:
-            return "Require Auth";
-        case ASF_REQUIRE_DEST:
-            return "Require Dest";
+        case ASF_AUTH_TOKEN_MINTER:
+            return "Auth NFToken Minter";
+        case ASF_TSH_COLLECT:
+            return "TSH Collect";
+        case ASF_DISALLOW_INCOMING_NFTOKEN_OFFER:
+            return "Disallow NFToken Offer";
+        case ASF_DISALLOW_INCOMING_CHECK:
+            return "Disallow Check";
+        case ASF_DISALLOW_INCOMING_PAYCHAN:
+            return "Disallow PayChan";
+        case ASF_DISALLOW_INCOMING_TRUSTLINE:
+            return "Disallow Trustline";
+        case ASF_DISALLOW_INCOMING_REMIT:
+            return "Disallow Remit";
         default:
             return NULL;
     }
