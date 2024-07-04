@@ -359,8 +359,8 @@ const char *resolve_field_name(field_t *field) {
             //     return "Hashes";
             // case 3:
             //     return "Amendments";
-            case 4:
-                return "NFToken Offers";
+            // case 4:
+            //     return "NFToken Offers";
             case 5:
                 return "Hook Namespaces";
             case 99:
