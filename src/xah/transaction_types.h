@@ -29,12 +29,9 @@
 #define TRANSACTION_ACCOUNT_SET     3
 #define TRANSACTION_ESCROW_CANCEL   4
 #define TRANSACTION_SET_REGULAR_KEY 5
-// #define TRANSACTION_NICKNAME_SET               6
 #define TRANSACTION_OFFER_CREATE 7
 #define TRANSACTION_OFFER_CANCEL 8
-// #define TRANSACTION_CONTRACT                   9
 #define TRANSACTION_TICKET_CREATE 10
-// #define TRANSACTION_TICKET_CANCEL              11
 #define TRANSACTION_SIGNER_LIST_SET        12
 #define TRANSACTION_PAYMENT_CHANNEL_CREATE 13
 #define TRANSACTION_PAYMENT_CHANNEL_FUND   14
@@ -46,26 +43,15 @@
 #define TRANSACTION_TRUST_SET              20
 #define TRANSACTION_ACCOUNT_DELETE         21
 #define TRANSACTION_SET_HOOK               22
-// #define TRANSACTION_NFTOKEN_MINT               25
-// #define TRANSACTION_NFTOKEN_BURN               26
-// #define TRANSACTION_NFTOKEN_CREATE_OFFER       27
-// #define TRANSACTION_NFTOKEN_CANCEL_OFFER       28
-// #define TRANSACTION_NFTOKEN_ACCEPT_OFFER       29
 #define TRANSACTION_URITOKEN_MINT              45
 #define TRANSACTION_URITOKEN_BURN              46
 #define TRANSACTION_URITOKEN_BUY               47
 #define TRANSACTION_URITOKEN_CREATE_SELL_OFFER 48
 #define TRANSACTION_URITOKEN_CANCEL_SELL_OFFER 49
 #define TRANSACTION_REMIT                      95
-// #define TRANSACTION_GENESIS_MINT               96
 #define TRANSACTION_IMPORT       97
 #define TRANSACTION_CLAIM_REWARD 98
 #define TRANSACTION_INVOKE       99
-// #define TRANSACTION_ENABLE_AMENDMENT           100
-// #define TRANSACTION_SET_FEE                    101
-// #define TRANSACTION_UNL_MODIFY                 102
-// #define TRANSACTION_EMIT_FAILURE               103
-// #define TRANSACTION_UNL_REPORT                 104
 
 static inline bool is_transaction_type_field(field_t *field) {
     return field->data_type == STI_UINT16 && field->id == XAH_UINT16_TRANSACTION_TYPE;
